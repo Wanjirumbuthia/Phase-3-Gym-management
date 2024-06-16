@@ -19,7 +19,7 @@ def create_tables():
             name VARCHAR(20),
             payment INTEGER,
             description TEXT,
-            duration VARCHAR(7)
+            duration VARCHAR(8)
         );
     ''')
 
