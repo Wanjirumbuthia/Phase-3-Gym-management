@@ -184,17 +184,6 @@ class GymMember:
         return [cls.instance_from_db(row) for row in rows]
 
     @classmethod
-    def find_by_first_name(cls, first_name):
-        """Return a list of GymMember objects corresponding to all table rows matching the specified first_name"""
-        sql = """
-            SELECT *
-            FROM gym_members
-            WHERE first_name = ?
-        """
-        rows = CURSOR.execute(sql, (first_name,)).fetchall()
-        return [cls.instance_from_db(row) for row in rows]
-
-    @classmethod
     def find_by_id(cls, id):
         """Return a GymMember object corresponding to the table row matching the specified primary key"""
         sql = """
