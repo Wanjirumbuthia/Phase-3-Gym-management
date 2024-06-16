@@ -53,3 +53,13 @@ def main():
         elif current_menu == "payment":
             payment_menu()
             current_menu = "main"
+def main_menu():
+    menu = """
+    Welcome to Gym Management System
+    Please select a category:
+    1. Gym Member Management
+    2. Membership Plan Management
+    3. Payment Management
+    4. Exit the system
+    """
+    print_menu(menu)          
