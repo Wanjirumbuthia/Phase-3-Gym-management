@@ -18,3 +18,38 @@ from helpers import (
     update_payment,
     delete_payment,
 )
+
+def print_menu(menu):
+    """Print the specified menu"""
+    print(menu)
+
+def main():
+    current_menu = "main"
+    
+    while True:
+        if current_menu == "main":
+            main_menu()
+            choice = input("Enter your choice: ")
+            
+            if choice == "1":
+                current_menu = "gym_member"
+            elif choice == "2":
+                current_menu = "membership_plan"
+            elif choice == "3":
+                current_menu = "payment"
+            elif choice == "4":
+                exit_program()
+            else:
+                print("Invalid choice. Please try again.")
+        
+        elif current_menu == "gym_member":
+            gym_member_menu()
+            current_menu = "main"
+        
+        elif current_menu == "membership_plan":
+            membership_plan_menu()
+            current_menu = "main"
+        
+        elif current_menu == "payment":
+            payment_menu()
+            current_menu = "main"
