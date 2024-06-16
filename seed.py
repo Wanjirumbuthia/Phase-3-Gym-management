@@ -19,6 +19,7 @@ member4 = GymMember.create("Justin", "Tim", 30, "male", "0154658438", "justin@gm
 member5 = GymMember.create("Hakilah", "Tshiku", 20, "male", "4567890123", "hakilah@gmail.com")
 print(member1)
 print(member2)
+print(member3)
 
    
 plan1 = GymMembershipPlan.create("Basic Plan", 250, "Basic gym access", "1 month")
@@ -28,6 +29,7 @@ plan4 = GymMembershipPlan.create("Premium Plan", 2000, "unlimited access to all 
 plan5 = GymMembershipPlan.create("Silver Plan", 500, "Includes gym access and selected group classes", "2 month")
 print(plan1)
 print(plan2)
+print(plan3)
 
 
 payment1 = Payment.create(member1.id, plan1.name, "Credit Card", 250, "2024-06-01")
@@ -37,6 +39,7 @@ payment4 = Payment.create(member4.id, plan4.name, "Bank Transfer",2000, "2024-05
 payment5 = Payment.create(member5.id, plan5.name, "Mpesa", 500, "2024-03-13")
 print(payment1)
 print(payment2)
+print(payment3)
 
 
 
