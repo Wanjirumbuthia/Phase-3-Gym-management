@@ -11,13 +11,6 @@ def list_gym_members():
     for member in members:
         print(member)
 
-def find_gym_member_by_name():
-    name = input("Enter the member's name: ")
-    member = GymMember.find_by_name(name)
-    if member:
-        print(member)
-    else:
-        print(f"No gym member found with name {name}")
 
 def find_gym_member_by_id():
     member_id = int(input("Enter the member's id: "))
@@ -31,7 +24,7 @@ def create_gym_member():
     first_name = input("Enter the member's first name: ")
     last_name = input("Enter the member's last name: ")
     age = int(input("Enter the member's age: "))
-    gender = input("Enter the member's gender (Male, Female, Other): ")
+    gender = input("Enter the member's gender (male, female, other): ")
     phone_number = input("Enter the member's phone number: ")
     email = input("Enter the member's email: ")
     member = GymMember.create(first_name, last_name, age, gender, phone_number, email)
@@ -44,7 +37,7 @@ def update_gym_member():
         member.first_name = input("Enter the member's new first name: ")
         member.last_name = input("Enter the member's new last name: ")
         member.age = int(input("Enter the member's new age: "))
-        member.gender = input("Enter the member's new gender (Male, Female, Other): ")
+        member.gender = input("Enter the member's new gender (male, female, other): ")
         member.phone_number = input("Enter the member's new phone number: ")
         member.email = input("Enter the member's new email: ")
         member.update()
