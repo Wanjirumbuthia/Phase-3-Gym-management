@@ -55,11 +55,11 @@ def main():
             current_menu = "main"
 def main_menu():
     menu = """
-      Gym Management System
+       Gym Management System
     Please select a category:
-    1. Gym Member Management
-    2. Membership Plan Management
-    3. Payment Management
+    1. Gym Member
+    2. Membership Plan
+    3. Payment
     4. Exit the system
     """
     print_menu(menu)  
@@ -67,7 +67,7 @@ def main_menu():
 def gym_member_menu():
     while True:
         menu = """
-        Gym Member Management Menu:
+        Gym Member Menu:
         1. List all gym members
         2. Find gym member by ID
         3. Create a new gym member
@@ -94,7 +94,7 @@ def gym_member_menu():
 def membership_plan_menu():
     while True:
         menu = """
-        Membership Plan Management Menu:
+        Membership Plan Menu:
         1. List all gym membership plans
         2. Find gym membership plan by name
         3. Find gym membership plan by ID
@@ -124,7 +124,7 @@ def membership_plan_menu():
 def payment_menu():
     while True:
         menu = """
-        Payment Management Menu:
+        Payment Menu:
         1. List all payments
         2. Find payments by member ID
         3. Find payments by membership plan name
