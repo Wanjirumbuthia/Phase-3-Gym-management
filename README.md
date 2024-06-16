@@ -9,6 +9,19 @@
 ## Description
 The Gym Management System  is an application designed to manage gym memberships, membership plans, and payments efficiently. This project allows gym administrators to perform various tasks, including adding and managing gym members, creating and deleting membership plans, and recording and viewing payments. 
 
+## Installation
+- Clone the repository
+
+- Navigate to the project directory
+
+- Install required dependencies:
+    -pipenv install
+    -pipenv shell
+- To start the CLI application, run:
+    -python3 cli.py
+-  To initialize the database with sample data
+    -python3 seed.py
+
 ## Features
 
 It is divided into three main categoriesGym Member, Membership Plan , and Payment.
@@ -64,3 +77,10 @@ It is divided into three main categoriesGym Member, Membership Plan , and Paymen
 ├── Pipfile.lock
 ├── README.md
 └── seed.py
+
+## Support 
+github.com/Wanjirumbuthia               
+
+### License
+The content of this site is licensed under the MIT license
+Copyright (c) 2024.
