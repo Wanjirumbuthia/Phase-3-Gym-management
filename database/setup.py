@@ -37,6 +37,15 @@ def create_tables():
     ''')
 
     CONN.commit()
+def drop_table():
+    
+    sql = """
+        DROP TABLE IF EXISTS products;
+    """
+    CURSOR.execute(sql)
+    CONN.commit()
+
+drop_table()
 
 # Call the function to create tables
 create_tables()
